@@ -6,7 +6,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.Date;
 
-@Table(name = "Tbl_CoreConfigurations")
+@Table(name = "tbl_configuration")
 @Data
 @Entity
 @NoArgsConstructor
@@ -18,13 +18,13 @@ public class ConfigurationData {
     @Column(name = "CONFIGURATION_ID")
     private Long configurationId;
 
-    @Column(name = "NAME_CONFIGURATION", nullable = false, length = 60)
+    @Column(name = "NAME_CONFIGURATION", nullable = false, length = 100)
     private String name;
 
     @Column(name = "STATUS_CONFIG", nullable = false, length = 3)
     private String statusConfig;
 
-    @Column(name = "DATE_REGISTRATION", nullable = false)
-    private Date dateRegistration;
+    @Column(name = "CONFIGURATION_TYPE_ID", nullable = false)
+    private Long configurationTypeId;
 
 }

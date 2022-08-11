@@ -48,7 +48,7 @@ public class CoreConfigurationService implements ICoreConfigurationService {
         configuration.setConfigurationId(configurationDto.getConfigurationId());
         configuration.setName(configurationDto.getName());
         configuration.setStatusConfig(configurationDto.getStatusConfig());
-        configuration.setDateRegistration(dateNow.getTime());
+        configuration.setConfigurationTypeId(configurationDto.getConfigurationTypeId());
         configurationRepository.save(configuration);
     }
 

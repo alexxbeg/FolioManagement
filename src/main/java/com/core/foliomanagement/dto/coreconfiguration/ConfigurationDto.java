@@ -15,5 +15,6 @@ public class ConfigurationDto implements Serializable {
     private Long configurationId;
 	private String name;
     private String statusConfig;
+    private Long configurationTypeId;
 
 }
