@@ -18,10 +18,10 @@ public class ConfigurationData {
     @Column(name = "CONFIGURATION_ID")
     private Long configurationId;
 
-    @Column(name = "NAME_CONFIGURATION", nullable = false, length = 100)
-    private String name;
+    @Column(name = "NAME", nullable = false, length = 100)
+    private String nameConfiguration;
 
-    @Column(name = "STATUS_CONFIG", nullable = false, length = 3)
+    @Column(name = "STATUS", nullable = false, length = 3)
     private String statusConfig;
 
     @Column(name = "CONFIGURATION_TYPE_ID", nullable = false)

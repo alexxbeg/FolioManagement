@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Data
 public class ConfigurationDto implements Serializable {
     private Long configurationId;
-	private String name;
+	private String nameConfiguration;
     private String statusConfig;
     private Long configurationTypeId;
 

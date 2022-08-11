@@ -46,7 +46,7 @@ public class CoreConfigurationService implements ICoreConfigurationService {
         Calendar dateNow = Calendar.getInstance();
         ConfigurationData configuration = new ConfigurationData();
         configuration.setConfigurationId(configurationDto.getConfigurationId());
-        configuration.setName(configurationDto.getName());
+        configuration.setNameConfiguration(configurationDto.getNameConfiguration());
         configuration.setStatusConfig(configurationDto.getStatusConfig());
         configuration.setConfigurationTypeId(configurationDto.getConfigurationTypeId());
         configurationRepository.save(configuration);
